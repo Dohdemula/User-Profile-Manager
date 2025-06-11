@@ -26,9 +26,21 @@ body {
 
 .nav-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   gap: 1rem;
 }
 
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.nav-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 .nav-link {
   background: none;
   border: none;
@@ -38,6 +50,8 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.3s;
+  text-decoration: none;
+  
 }
 
 .nav-link:hover {
@@ -61,12 +75,9 @@ body {
 .hero {
   width: 100%;
   max-width: 1200px;
-  background: linear-gradient(135deg, #2563eb, #1e40af);
-  color: white;
   padding: 4rem 2rem;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero-content {
@@ -86,13 +97,13 @@ body {
 }
 
 .button {
-  background-color: white;
-  color: #2563eb;
-  border: none;
+  background-color: #2563eb;
+  color: white;
+  border:#333;
   padding: 0.75rem 2rem;
   font-size: 1.1rem;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 50px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
 }
